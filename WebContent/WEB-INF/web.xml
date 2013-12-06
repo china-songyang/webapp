@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>webapp</display-name>
+  <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<description>加载Action根路径</description>
+		<param-name>actionRootPath</param-name>
+		<param-value>/com/saturn/action</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>
+			com.saturn.app.web.ActionLoaderListener
+		</listener-class>
+	</listener>
+	
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>com.saturn.app.web.filter.EncodingFilter</filter-class>
+		<init-param>
+			<description>字符集</description>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<description>是否忽略客户自定义字符集</description>
+			<param-name>ignore</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter>
+		<filter-name>session</filter-name>
+		<filter-class>com.saturn.app.web.filter.SessionTimeOutFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>session</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>com.saturn.app.web.SaturnDispatcherServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping><!-- .do不需要Session验证 -->
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+</web-app>

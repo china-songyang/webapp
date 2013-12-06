@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="geneon">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/websit"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/auth"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/system"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/app"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/mobile"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/webdo"/>
+        <property name="java-output-path" value="/geneon/build/classes"/>
+        <property name="context-root" value="webapp"/>
+    </wb-module>
+</project-modules>

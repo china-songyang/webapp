@@ -1,0 +1,126 @@
+/***********************列表单*******************************/
+.table-form td {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #2F6BBD;
+}
+
+.table-form tr td input {
+	width: 250px;
+}
+/*************************行表单****************************************/
+form.saturn-rowfrom label {
+	display: inline-block;
+	line-height: 30px;
+	vertical-align: top;
+	cursor: hand;
+	text-align: right;
+	width: 60px;
+}
+
+form.saturn-rowfrom {
+	font-size: 1em;
+	color: #2F6BBD;
+	line-height: 30px;
+	width: 900px;
+}
+
+form.saturn-rowfrom legend {
+	padding-left: 0;
+}
+
+form.saturn-rowfrom legend,form.cmxform label {
+	color: #2F6BBD;
+}
+
+form.saturn-rowfrom fieldset fieldset {
+	background: none;
+}
+
+form.saturn-rowfrom div {
+	padding-left: 400px;
+	padding-top: 10px;
+}
+
+/*
+input {width: 150px;}
+div.error { display: none; }
+input { border: 1px solid #2F6BBD; width: 150px;}
+input:focus { border: 1px dotted #2F6BBD; }
+input:error { border: 1px dotted red; }
+input:right{ border: 1px dotted #009900; }*/
+
+/************************main页************************************/
+.body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.top_img {
+	background-image: url(../icons/top-title.gif);
+	height: 97px;
+	width: auto;
+}
+
+.user-info {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 27px;
+	color: #2A5AB3;
+	float: left;
+	height: 27px;
+	width: 245px;
+	margin-top: 73px;
+	padding-left: 25px;
+	background-image: url(../icons/user-log.png);
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.menu-info {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 27px;
+	color: #2A5AB3;
+	float: left;
+	height: 27px;
+	margin-top: 73px;
+	padding-left: 40px;
+	width: 700px;
+}
+
+/************************login页************************************/
+.login_img {
+	background-image: url(../saturn/images/saturn/login.png);
+	height: 304px;
+	width: 997px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 260px;
+}
+
+.login_text {
+	height: 150px;
+	width: 250px;
+	margin-left: 450px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+}
+
+.login_input {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	width: 150px;
+}
+
+.login_ok {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	width: 60px;
+}

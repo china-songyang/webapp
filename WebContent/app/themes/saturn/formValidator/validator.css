@@ -1,0 +1,42 @@
+.onShow {
+	background: url(../images/formValidator/onShow.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+
+.onFocus {
+	background: url(../images/formValidator/onFocus.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+
+.onError {
+	background: url(../images/formValidator/onError.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+	color: #FF0000;
+}
+
+.onCorrect {
+	background: url(../images/formValidator/onCorrect.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+	color: green;
+}
+
+.onLoad {
+	background: #E9FFEB url(images/formValidator/onLoad.gif) no-repeat 3px
+		3px;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	vertical-align: middle;
+}

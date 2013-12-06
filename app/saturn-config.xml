@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saturn-config>
+	<database>
+		<dbType>mysql</dbType>
+		<connectType>jdbc</connectType>
+		<jndiname>JNDIName</jndiname>
+		<jdbcdriver>com.mysql.jdbc.Driver</jdbcdriver>
+	 	<!-- <jdbcurl>jdbc:mysql://192.168.1.64:3306/app</jdbcurl> -->
+	 	<jdbcurl><![CDATA[jdbc:mysql://localhost:3306/webapp?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false]]></jdbcurl>
+		<username>root</username>
+		<password>root</password>
+		<!-- DataBase pool configuration -->
+		<maxActive>30</maxActive>
+		<maxIdle>10</maxIdle>
+		<maxWait>1000</maxWait>
+		<removeAbandoned>false</removeAbandoned>
+		<removeAbandonedTimeout>120</removeAbandonedTimeout>
+		<testOnBorrow>true</testOnBorrow>
+		<validationQuery>SELECT COUNT(*) FROM app_dict</validationQuery>
+	</database>
+</saturn-config>
